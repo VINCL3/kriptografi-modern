@@ -108,6 +108,39 @@ section{
     color: var(--text-light);
 }
 
+.input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid var(--primary-color);
+    border-radius: 4px;
+    background-color: var(--extra-light);
+    font-size: 16px;
+}
+
+.button {
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+select {
+    padding: 8px 10px;
+    font-size: 16px;
+    border: 2px solid var(--primary-color);
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
 @media (width < 750px) {
     nav .checkbox {
         display: block;

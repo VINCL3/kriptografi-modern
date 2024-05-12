@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="kriptografi.js"></script>
     <title>Kriptografi modern</title>
     <nav>
         <div class="nav-content">
@@ -14,33 +15,30 @@
     <section class="first-section">
         <div class="section-container">
             <h1 class="title">
-                PLAINTEXT(Binary): <br>
-                KEY(Binary):
+                * = MUSTN'T EMPTY <br>
+                PLAINTEXT(Binary):* <input id="plaintext" class="input" type="text"><br>
+                KEY(Binary):* <input id="key" class="input" type="text">
+            </h1>
+            <h1 class="title">
+                GROUP SIZE: 3 BITS
+            </h1>
+            <h1 class="title">
+                CHIPER PER BITS: <input id="cipher-per-bits" class="input" type="text"> <br>
+                DECIMAL: <input id="ciphertext-dec" class="input" type="text"> <br>
+                HEXADECIMAL: <input id="ciphertext-hex" class="input" type="text">
             </h1>
         </div>
     </section>
     <section class="first-section">
         <div class="section-container">
             <h1 class="title">
-                CHIPER PER BITS: <br>
-                DECIMAL: <br>
-                HEXADECIMAL:
+                CHIPERTEXT(Binary): <input id="ciphertext" class="input" type="text"> <br>
+                KEY(Binary): <input id="dec-key" class="input" type="text">
             </h1>
-        </div>
-    </section>
-    <section class="first-section">
-        <div class="section-container">
             <h1 class="title">
-                CHIPERTEXT(Binary): <br>
-                KEY(Binary):
+                PLAINTEXT(Binary): <input id="dec-plaintext" class="input" type="text">
             </h1>
-        </div>
-    </section>
-    <section class="first-section">
-        <div class="section-container">
-            <h1 class="title">
-                PLAINTEXT(Binary):
-            </h1>
+            <button class="button" onclick="encrypt()">ENCRYPT</button>
         </div>
     </section>
 </body>
