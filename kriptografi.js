@@ -63,8 +63,6 @@ function convertToHexadecimal(str) {
 function decrypt() {
     var ciphertext = document.getElementById("ciphertext").value;
     var key = document.getElementById("dec-key").value;
-    var plaintext = caesarCipher(ciphertext, -key);
-    document.getElementById("dec-plaintext").value = plaintext;
 
     if (!isValidBinaryString(ciphertext) || !isValidBinaryString(key)) {
         alert("Ciphertext and key must be binary strings.");
